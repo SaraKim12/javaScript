@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro?</h1>
+    nacionalidade: <input type="text" name="txtna" id="txtna">
+    <input type="button" value="Verificar" onclick="processar()">
+    <div id="res"></div>
+    <script>
+        function processar(){
+            var país = window.document.querySelector('txtna')
+            var p = Text(txtna.value)
+            res.innerHTML = `<p>Você é <strong>${p}</strong></p>`
+            if (p == Brasil){
+                res.innerHTML += `Você é <strong>Brasileiro</strong>`
+            }
+            res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`
+        }
+    </script>
+</body>
+</html>
