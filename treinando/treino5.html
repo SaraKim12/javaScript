@@ -10,8 +10,18 @@
     
     <script>
 
-        var pos;
-        pos=;
+        var pos,msg,pontos;
+        pontos=100;
+
+        if(pontos>=1000){
+            pos=1;
+        } else if(pontos>=800){
+            pos=2;
+        } else if(pontos>=600){
+            pos=3;
+        } else{
+            pos=0;
+        }
         switch(pos){
             case 1:
                 msg='primeiro lugar</br>Medalha de ouro';
