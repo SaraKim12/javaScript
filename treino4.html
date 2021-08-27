@@ -10,23 +10,33 @@
     
     <script>
 
-        var nota=18;
+        var nota=90;
         var res;
         //aprovado com louvor >=95
         //aprovado >=60
         //recuperação >=40 && <60
         //reprovado <40
         //muito bem reprovado <20
-        if(nota>=95){
-            res='aprovado com louvor!'
-        } else if(nota>=60){
-            res='aprovado'
+        if(nota>=60){
+            res="aprovado";
+            if(nota>=95){
+                if(nota ==100){
+                    res+=' com excelência!';
+                } else{
+                    res+=' com louvor!';
+                }
+            } else{
+                res='aprovado';
+            }
         } else if(nota>=40){
             res="recuperação"
-        } else if(nota >=20){
-            res='reprovado'
         } else{
-            res='reprovadíssimo'
+            res='reprovado'
+             if(nota >=20){
+                 res+=' por nota baixa'
+            } else{
+                 res+=' com orgulho'
+            }
         }
         document.write(res)
 
