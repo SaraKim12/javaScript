@@ -1,0 +1,18 @@
+#d1,#d2,#d3{
+    border: 7px dotted rgba(0, 0, 0, 0.445);
+    padding: 0px 10px 25px 10px;
+    background-image: url(fundo1.png);
+}
+
+#d1{
+    background-clip: border-box;
+
+}
+
+#d2{
+    background-clip: padding-box;
+}
+
+#d3{
+    background-clip: content-box;
+}

@@ -1,0 +1,6 @@
+body{
+    background-image: url(kugoginjo.png), url(fundo1.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 500px, 300px;
+    background-attachment: scroll, fixed;
+}

@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    background-image: url(kugo_ginjo_by_blackbommer22_dc3xtjv-pre.png);
+    background-size: 300pt;
+    background-repeat: no-repeat;
+    background-position:  400px 200px;
+
+}
+
+p{
+    font-size: 40pt;
+    
+    background-image: url(fundo.png);
+    background-repeat: repeat-x;
+    background-position: 0px 20px;
+}
