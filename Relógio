@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+
+    <style>
+
+        body{
+            background: burlywood;
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 400%;
+            margin-top: 80px;
+            margin-bottom: -50px;
+        }
+
+        #rel{
+            font-size: 500%;
+            text-align: center;
+            margin: 300px 400px 100px 400px;
+            border: green solid 3px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>HORÁRIO DE BRASÍLIA</h1>
+
+    <script>
+
+        function relogio(){
+            var data = new Date()
+            var hora = data.getHours()
+            var min = data.getMinutes()
+            var seg = data.getSeconds()
+
+            if(hora<10){
+                hora = '0' + hora
+            }
+
+            if(min<10){
+                min = '0' + seg
+           }
+
+            if(seg<10){
+                seg = '0' + seg
+            }
+
+            var horas = hora+':'+min+':'+seg
+            document.getElementById('rel').value = horas
+        }
+
+        var tempo = setInterval(relogio,1000)
+
+    </script>
+
+    <input type="text" id="rel"/>
+    
+</body>
+</html>
