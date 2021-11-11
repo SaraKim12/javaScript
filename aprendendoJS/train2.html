@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+        
+        var energia = 21
+        var vel
+
+        if((energia > 80) && (energia < 100)){
+            document.write('Energia alta')
+            vel = 100
+        } else if((energia > 60) && (energia < 81)){
+            document.write('Energia boa')
+            vel = 80
+        } else if((energia > 40) && (energia < 61)){
+            document.write('Energia média')
+            vel = 60
+        } else if((energia > 20) && (energia < 41)){
+            document.write('Energia baixa')
+            vel = 40
+        } else if((energia > 1) && (energia < 21)){
+            document.write('Energia crítica')
+            vel = 20
+        } else {
+            document.write('Morto!')
+            vel = 0
+        }
+
+    </script>
+    
+</body>
+</html>

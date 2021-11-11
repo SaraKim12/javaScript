@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <script>
+        let pontuacao = prompt('Digite a nota aredondada(10, 20 ou 30):')
+
+        if(pontuacao == 30){
+            document.write('Sua nota foi:'+ pontuacao + '<br>')
+            document.write('Por isso repetirei sua nota 30 vezes!' + '<br>')
+            for(i = 0; i < 30; i++){
+                document.write(pontuacao + '<br>')
+            }
+        } else if(pontuacao == 20){
+            document.write('Sua nota foi:'+ pontuacao + '<br>')
+            document.write('Por isso repetirei sua nota 20 vezes!' + '<br>')
+            for(i = 0; i < 20; i++){
+                document.write(pontuacao + '<br>')
+            }
+        } else if(pontuacao == 10){
+            document.write('Sua nota foi:'+ pontuacao + '<br>')
+            document.write('Por isso repetirei sua nota 10 vezes!' + '<br>')
+            for(i = 0; i < 10; i++){
+                document.write(pontuacao + '<br>')
+            }
+        } else{
+            document.write('Nota invalida. Tente uma nota aredondada(10, 20 ,30)')
+        }
+    </script>
+    
+</body>
+</html>
