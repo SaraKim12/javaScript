@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChangeColor</title>
+    <style>
+
+        #btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: cursive;
+            font-weight: 700;
+            border: 5px solid greenyellow;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+
+    </style>
+</head>
+<body id="change">
+
+    <button  id="btn" onclick="ChangeColor()">MUDAR</button>
+
+    <script>
+
+        let counter = 0
+        var conteudo = document.getElementById('change')
+        var botao = document.getElementById('btn')
+        var change = ['red','orange','blue','brown','yellow','white','pink','green','purple','grey']
+
+        function ChangeColor(){
+            counter ++
+            if(counter == change.length){
+                counter = 0
+            }
+            conteudo.style.background = change[counter]
+            botao.style.background = change[counter]
+        }
+
+    </script>
+
+</body>
+</html>
