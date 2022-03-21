@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="titulo">
+            CALCULE SEU IMC
+        </h1>
+        <form>
+            <div class="form-group">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email: </label>
+                    <input type="email" class="form-control" id="inputPassword">
+                </div>
+                <div class="form-group">
+                    <label for="inputName">Nome: </label>
+                    <input type="text" class="form-control" id="inputname">
+                </div>
+                <div class="form-group">
+                    <label for="inputWidth">Peso: </label>
+                    <input type="number" class="form-control" id="inputwidth">
+                </div>
+    
+                <div class="form-group">
+                    <label for="inputHeight">Altura: </label>
+                    <input type="number" class="form-control" id="inputheight">
+                </div>
+                <div class="form-group">
+                    <label for="inputYear">Idade: </label>
+                    <input type="number" class="form-control" id="inputYear">
+                </div>
+            </div>
+            <button class="btn" onclick="obterDados()">Calcular</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
