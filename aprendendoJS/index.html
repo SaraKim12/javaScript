@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="sistema()">clique aqui</button>
+    <script>
+        function sistema(){
+            let data = new Date()
+            let dia = data.getDate()
+            let month = data.getMonth()
+            let ano = data.getFullYear()
+            let hora = data.getHours()
+            let min = data.getMinutes()
+            let sec = data.getSeconds()
+            let sem = data.getDay()
+
+            if(month == 1){
+                document.write('Mês: Janeiro' + '<br>')
+            } 
+            else if(month == 2){
+                document.write('Mês: Fevereiro' + '<br>')
+            }
+            else if(month == 3){
+                document.write('Mês: Março' + '<br>')
+            }
+            else if(month == 4){
+                document.write('Mês: Abril' + '<br>')
+            }
+            else if(month == 5){
+                document.write('Mês: Maio' + '<br>')
+            }
+            else if(month == 6){
+                document.write('Mês: Junho' + '<br>')
+            }
+            else if(month == 7){
+                document.write('Mês: Julho' + '<br>')
+            }
+            else if(month == 8){
+                document.write('Mês: Agosto' + '<br>')
+            }
+            else if(month == 9){
+                document.write('Mês: Setembro' + '<br>')
+            }
+            else if(month == 10){
+                document.write('Mês: Outubro' + '<br>')
+            }
+            else if(month == 11){
+                document.write('Mês: Novembro' + '<br>')
+            } else{
+                document.write('Mês: Dezembro' + '<br>')
+            }
+
+            if(sem == 0){
+                document.write('Dia da semana: segunda')
+            }
+            else if(sem == 1){
+                document.write('Dia da semana: terça' + '<br>')
+            }
+            else if(sem == 2){
+                document.write('Dia da semana: quarta' + '<br>')
+            }
+            else if(sem == 3){
+                document.write('Dia da semana: quinta' + '<br>')
+            }
+            else if(sem == 4){
+                document.write('Dia da semana: sexta' + '<br>')
+            }
+            else if(sem == 5){
+                document.write('Dia da semana: sábado' + '<br>')
+            }
+            else if(sem == 6){
+                document.write('Dia da semana: domingo' + '<br>')
+            }
+            
+            one = document.write('Dia: ', dia + '<br>')
+            two = document.write('Ano: ', ano + '<br>')
+
+            four = document.write('Hora: ', hora + '<br>')
+            five = document.write('Minutos: ', min + '<br>')
+
+            seven = document.write('Segundo: ', sec + '<br>')
+
+        }
+    </script>
+</body>
+</html>
